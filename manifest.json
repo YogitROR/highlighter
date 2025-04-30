@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Paragraph Highlighter",
+  "version": "1.0",
+  "description": "Highlight paragraphs containing given keywords.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+} 
