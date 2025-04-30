@@ -1,0 +1,76 @@
+/* popup.css */
+body {
+  min-width: 270px;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: linear-gradient(135deg, #f7f7fa 0%, #e3e9f7 100%);
+  margin: 0;
+  padding: 24px 18px 18px 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(74, 144, 226, 0.08);
+}
+
+h3 {
+  margin-top: 0;
+  color: #357ab8;
+  font-weight: 700;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1.5px solid #b3c6e0;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 1em;
+  box-sizing: border-box;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input:focus {
+  border: 1.5px solid #4a90e2;
+  background: #f0f6ff;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #4a90e2 0%, #357ab8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.05em;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(74, 144, 226, 0.10);
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.footer {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 0.95em;
+  color: #8fa1c7;
+  letter-spacing: 0.5px;
+}
+
+#keywords {
+  margin-top: 8px;
+}
+
+::-webkit-input-placeholder { color: #b3c6e0; }
+::-moz-placeholder { color: #b3c6e0; }
+:-ms-input-placeholder { color: #b3c6e0; }
+::placeholder { color: #b3c6e0; }
